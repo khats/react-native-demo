@@ -1,21 +1,18 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
+import FlexBasic from './Components/FlexBasic';
+import TextInputDemo from './Components/TextInputDemo';
+import UsersList from './Components/UsersList';
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app 111!</Text>
+      <View>
+        {/*
+        <FlexBasic/>*/}
+        {/*<TextInputDemo/>*/}
+        <UsersList />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
